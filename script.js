@@ -6,7 +6,7 @@ const data = [
   { name: "Kim srinija", age: 21, profession: "developer" },
 ];
 //console.log(data);
-// 1. Print Developers
+// 1. Print Developersfi
 function printDeveloper() {
   for (const obj of data) {
     //using for of () it take each obj
@@ -174,14 +174,17 @@ function updateJohnsProfession() {
 // 10. Profession Count
 function getTotalProfessions() {
   //Calculate and print the total number of developers and admins in the array.
- // let count=0;
-  let cb=(prev,ele,index) =>{ 
-    if(data[index].profession==='developer' || data[index].profession==='admin' ){
-      return prev+1;
-    }else {
+  // let count=0;
+  let cb = (prev, ele, index) => {
+    if (
+      data[index].profession === "developer" ||
+      data[index].profession === "admin"
+    ) {
+      return prev + 1;
+    } else {
       return prev;
     }
-  }
+  };
   let count = data.reduce(cb, 0);
   console.log("The total number of developers and admins in the array:", count);
 }
