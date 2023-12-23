@@ -7,7 +7,14 @@ const data = [
 ];
 //console.log(data);
 // 1. Print Developersfi
+
 function printDeveloper() {
+  /*
+  //to print the array
+  data.forEach((e,index,list) =>{
+    console.log(e);
+  })
+  */
   for (const obj of data) {
     //using for of () it take each obj
     if (obj.profession === "developer") {
